@@ -2,7 +2,9 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-git pull origin main;
+git checkout CeryDotfiles;
+git pull origin CeryDotfiles;
+git submodule update --init --recursive;
 
 function doIt() {
 	rsync --exclude ".git/" \
@@ -13,6 +15,7 @@ function doIt() {
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
+	sh ~/.vim_runtime/install_awesome_vimrc.sh;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

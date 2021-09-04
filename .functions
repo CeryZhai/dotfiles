@@ -169,3 +169,13 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+function rbm() {
+	if [ $# == 0  ]; then
+		echo "rbm [cpu number] [gpu number] [cpu memory (G)] [command]"
+		return;
+	fi
+	local mem
+	let "mem = $[$3*1000]"
+	rlaunch -AX --cpu $1 --gpu $2 --memory $mem -- $4
+}

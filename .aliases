@@ -9,11 +9,27 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
 alias g="git"
+alias e="vim"
+alias :q="exit"
+alias c="clear"
+alias q="exit"
+alias t="tmux"
+alias y="yarn"
+alias rmake="rlaunch --cpu=40 --memory=100000 -v -- make -j40 && make develop -j40"
+alias py3="python3"
+alias py="python"
+alias py3db="python3 -m pdb"
+alias resnet="cd /home/zhaixinyi/model/Models/official/vision/classification/resnet"
+alias shufflenet="cd /home/zhaixinyi/model/Models/official/vision/classification/shufflenet"
+alias wsp="cd ~/MegBrain"
+alias imp="cd ~/MegBrain/imperative"
+alias ci="cd ~/MegBrain/ci/integration_test"
+alias unit="cd ~/MegBrain/imperative/python/test/unit"
+alias cvt="cd /data/convert/edge_training/deltaW_resnet"
+alias pf="nvprof --profile-all-processes -o %p -f &"
+alias benchmark="cd /data/megbrain-integration-test/src/benchmarks"
+alias oss="aws --endpoint-url=http://oss.i.brainpp.cn s3"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
