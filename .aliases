@@ -31,6 +31,11 @@ alias pf="nvprof --profile-all-processes -o %p -f &"
 alias benchmark="cd /data/megbrain-integration-test/src/benchmarks"
 alias oss="aws --endpoint-url=http://oss.i.brainpp.cn s3"
 
+# connect to ws2
+alias sshct_wh="ssh -CAXY dotfiles.zhaixinyi.ws2@hh-b-internal.brainpp.cn"
+alias sshct="ssh -CAXY zhaixinyi-workspace2.zhaixinyi.ws2@hh-b-internal.brainpp.cn"
+alias sshq="ssh -CAXY zhaixinyi@qiang.br.megvii-inc.com"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
