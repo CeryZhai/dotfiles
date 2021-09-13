@@ -28,3 +28,6 @@ else
 	fi;
 fi;
 unset doIt;
+sudo apt-get install -y fonts-powerline
+pip install powerline-shell --user
+
