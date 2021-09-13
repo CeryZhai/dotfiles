@@ -13,5 +13,5 @@
     "mode": "plain",
     "max_depth": 5
   },
-  "theme": "washed"
+  "theme": "gruvbox"
 }
