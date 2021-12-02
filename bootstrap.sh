@@ -28,6 +28,7 @@ else
 	fi;
 fi;
 unset doIt;
-sudo apt-get install -y fonts-powerline
+sudo apt-get install -y fonts-powerline python-pip
 pip install powerline-shell --user
+source ~/.bash_profile
 
