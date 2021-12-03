@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/shadowsocks:$PATH";
+export PATH="$HOME/shadowsocks:$HOME/.pyenv/bin:$HOME/.pyenv/shims:$HOME/.local/bin/:$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
