@@ -28,7 +28,7 @@ else
 	fi;
 fi;
 unset doIt;
-sudo apt-get install -y fonts-powerline python-pip
+sudo apt-get install -y fonts-powerline
 pip install powerline-shell pygments --user
 source ~/.bash_profile
 
